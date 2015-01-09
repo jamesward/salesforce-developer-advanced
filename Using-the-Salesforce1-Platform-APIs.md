@@ -6,19 +6,6 @@ In this module, you create an application that runs outside your Salesforce inst
 
 ![](images/api.jpg)
 
-## Requirement
-
-You need Node.js to perform the exercises in this module. If you don't already have Node.js installed on your system, you can install it [here](http://nodejs.org/).
-
-**Windows Users**: If you are experiencing problems after installing Node.js on Windows:
-
-1. Add c:\Program Files\Nodejs to your pathorRun "C:\Program Files\Nodejs\npm" install
-1. Create an "npm" directory in C:\Users\[yourname]\Appdata\Roaming
-
-
-
-> If you can't or don't want to install Node.js on your system, follow [these instructions](Using-the-Salesforce1-Platform-APIs-heroku.html) to deploy the app on Heroku instead.
-
 
 ## Step 1: Create a Connected App
 
@@ -65,25 +52,9 @@ You need Node.js to perform the exercises in this module. If you don't already h
 
 ## Step 3: Start the Node.js server
 
-1. Open Terminal (Mac) or a Command prompt (Windows)
-
-1. Navigate (cd) to the **salesforce-developer-advanced** (or salesforce-developer-advanced-master) directory
-
-1. Install the Node.js server dependencies:
-
-    ```
-    npm install
-    ```
-    
-    If you are on **Windows** and run into issues with npm after installing Node.js, try this:
-    - Add **c:\Program Files\Nodejs** to your path or run **"C:\Program Files\Nodejs\npm" install** instead of npm install
-    - Create an **npm** directory in C:\Users\[yourname]\Appdata\Roaming
-    
-1. Start the server:  
-
-    ```
-    node server
-    ```
+1. Run the gulp build
+    - Windows: In your project directory run `gulp.exe` command either by double-clicking on it or from a command prompt
+    - Linux, Mac, Cygwin: From a terminal / command line, in your project directory run: `./gulp`
 
 ## Step 4: Implement Salesforce Authentication using OAuth
 
